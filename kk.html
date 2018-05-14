@@ -19,7 +19,8 @@ function myFunction() {
  url = document.getElementById("myFile").value;
 }
 
-
+if(url!="")
+{
 var oReq = new XMLHttpRequest();
 oReq.open("GET", url, true);
 oReq.responseType = "arraybuffer";
@@ -44,6 +45,7 @@ oReq.onload = function(e) {
 }
 
 oReq.send();
+}
 </script>
 </body>
 
