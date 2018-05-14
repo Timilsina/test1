@@ -14,7 +14,12 @@
 
 <script>
 /* set up XMLHttpRequest */
-var url = document.getElementById("myFile").value;
+var url="";
+function myFunction() {
+ url = document.getElementById("myFile").value;
+}
+
+
 var oReq = new XMLHttpRequest();
 oReq.open("GET", url, true);
 oReq.responseType = "arraybuffer";
